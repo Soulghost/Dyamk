@@ -1,0 +1,23 @@
+//
+//  DyamkNativeInjector.m
+//  DyamkInjector
+//
+//  Created by soulghost on 22/6/2018.
+//  Copyright © 2018 soulghost. All rights reserved.
+//
+
+#import "DyamkNativeInjector.h"
+
+@interface DyamkNativeInjector_11 : NSObject
+
++ (void)run;
+
+@end
+
+@implementation DyamkNativeInjector_11
+
++ (void)run {
+    
+}
+
+@end

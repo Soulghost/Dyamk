@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		68DF1EE520DD17FE000974E7 /* BuildMe */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 68DF1EE620DD17FE000974E7 /* Build configuration list for PBXAggregateTarget "BuildMe" */;
+			buildPhases = (
+				68DF1EF620DD1A5A000974E7 /* [Dyamk] Delete old dylib */,
+				68DF1EEB20DD180D000974E7 /* [Dyamk] Copy dylib */,
+				68DF1EF520DD19D7000974E7 /* [Dyamk] Process with Dylib */,
+				68DF1F0220DD1DC1000974E7 /* [Dyamk] Trig Update */,
+			);
+			dependencies = (
+				68DF1EEA20DD1804000974E7 /* PBXTargetDependency */,
+			);
+			name = BuildMe;
+			productName = BuildMe;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		68DF1EEC20DD182B000974E7 /* DyamkInjector.framework in [Dyamk] Copy dylib */ = {isa = PBXBuildFile; fileRef = 68DF1ED420DD16DA000974E7 /* DyamkInjector.framework */; };
+		68DF1EF220DD18B5000974E7 /* replace.sh in Resources */ = {isa = PBXBuildFile; fileRef = 68DF1EF120DD18B5000974E7 /* replace.sh */; };
+		68DF1EFD20DD1CBD000974E7 /* DyamkNativeInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DF1EFB20DD1CBC000974E7 /* DyamkNativeInjector.h */; };
+		68DF1EFE20DD1CBD000974E7 /* DyamkNativeInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1EFC20DD1CBD000974E7 /* DyamkNativeInjector.m */; };
+		68DF1F0020DD1D26000974E7 /* DyamkCodePlayground.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1EFF20DD1D26000974E7 /* DyamkCodePlayground.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68DF1EE920DD1804000974E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68DF1ECB20DD16DA000974E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DF1ED320DD16DA000974E7;
+			remoteInfo = DyamkInjector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68DF1EEB20DD180D000974E7 /* [Dyamk] Copy dylib */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /opt/Dyamk/dylib;
+			dstSubfolderSpec = 0;
+			files = (
+				68DF1EEC20DD182B000974E7 /* DyamkInjector.framework in [Dyamk] Copy dylib */,
+			);
+			name = "[Dyamk] Copy dylib";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68DF1ED420DD16DA000974E7 /* DyamkInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DyamkInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF1ED820DD16DA000974E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DF1EEF20DD18A0000974E7 /* trigger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = trigger.py; sourceTree = "<group>"; };
+		68DF1EF120DD18B5000974E7 /* replace.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = replace.sh; sourceTree = "<group>"; };
+		68DF1EF320DD18C3000974E7 /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
+		68DF1EF720DD1A82000974E7 /* clear.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = clear.sh; sourceTree = "<group>"; };
+		68DF1EFB20DD1CBC000974E7 /* DyamkNativeInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyamkNativeInjector.h; sourceTree = "<group>"; };
+		68DF1EFC20DD1CBD000974E7 /* DyamkNativeInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyamkNativeInjector.m; sourceTree = "<group>"; };
+		68DF1EFF20DD1D26000974E7 /* DyamkCodePlayground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyamkCodePlayground.m; sourceTree = "<group>"; };
+		68DF1F0120DD1D48000974E7 /* DyamkCodePlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyamkCodePlayground.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68DF1ED020DD16DA000974E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68DF1ECA20DD16DA000974E7 = {
+			isa = PBXGroup;
+			children = (
+				68DF1ED620DD16DA000974E7 /* DyamkInjector */,
+				68DF1ED520DD16DA000974E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68DF1ED520DD16DA000974E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1ED420DD16DA000974E7 /* DyamkInjector.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68DF1ED620DD16DA000974E7 /* DyamkInjector */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1EFA20DD1C9D000974E7 /* core */,
+				68DF1EEE20DD188E000974E7 /* py */,
+				68DF1EED20DD1889000974E7 /* sh */,
+				68DF1ED820DD16DA000974E7 /* Info.plist */,
+				68DF1F0120DD1D48000974E7 /* DyamkCodePlayground.h */,
+				68DF1EFF20DD1D26000974E7 /* DyamkCodePlayground.m */,
+			);
+			path = DyamkInjector;
+			sourceTree = "<group>";
+		};
+		68DF1EED20DD1889000974E7 /* sh */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1EF320DD18C3000974E7 /* run.sh */,
+				68DF1EF120DD18B5000974E7 /* replace.sh */,
+				68DF1EF720DD1A82000974E7 /* clear.sh */,
+			);
+			path = sh;
+			sourceTree = "<group>";
+		};
+		68DF1EEE20DD188E000974E7 /* py */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1EEF20DD18A0000974E7 /* trigger.py */,
+			);
+			path = py;
+			sourceTree = "<group>";
+		};
+		68DF1EFA20DD1C9D000974E7 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1EFB20DD1CBC000974E7 /* DyamkNativeInjector.h */,
+				68DF1EFC20DD1CBD000974E7 /* DyamkNativeInjector.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68DF1ED120DD16DA000974E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF1EFD20DD1CBD000974E7 /* DyamkNativeInjector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68DF1ED320DD16DA000974E7 /* DyamkInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF1EDC20DD16DA000974E7 /* Build configuration list for PBXNativeTarget "DyamkInjector" */;
+			buildPhases = (
+				68DF1EF920DD1B70000974E7 /* [Dyamk] Do symbol replace */,
+				68DF1ECF20DD16DA000974E7 /* Sources */,
+				68DF1ED020DD16DA000974E7 /* Frameworks */,
+				68DF1ED120DD16DA000974E7 /* Headers */,
+				68DF1ED220DD16DA000974E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DyamkInjector;
+			productName = DyamkInjector;
+			productReference = 68DF1ED420DD16DA000974E7 /* DyamkInjector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68DF1ECB20DD16DA000974E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = soulghost;
+				TargetAttributes = {
+					68DF1ED320DD16DA000974E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					68DF1EE520DD17FE000974E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 68DF1ECE20DD16DA000974E7 /* Build configuration list for PBXProject "DyamkInjector" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68DF1ECA20DD16DA000974E7;
+			productRefGroup = 68DF1ED520DD16DA000974E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68DF1ED320DD16DA000974E7 /* DyamkInjector */,
+				68DF1EE520DD17FE000974E7 /* BuildMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68DF1ED220DD16DA000974E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF1EF220DD18B5000974E7 /* replace.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68DF1EF520DD19D7000974E7 /* [Dyamk] Process with Dylib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Dyamk] Process with Dylib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/DyamkInjector/sh/run.sh";
+		};
+		68DF1EF620DD1A5A000974E7 /* [Dyamk] Delete old dylib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Dyamk] Delete old dylib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/DyamkInjector/sh/clear.sh";
+		};
+		68DF1EF920DD1B70000974E7 /* [Dyamk] Do symbol replace */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Dyamk] Do symbol replace";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/DyamkInjector/sh/replace.sh";
+		};
+		68DF1F0220DD1DC1000974E7 /* [Dyamk] Trig Update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Dyamk] Trig Update";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /Users/soulghost/.pyenv/shims/python;
+			shellScript = "python ${SRCROOT}/DyamkInjector/py/trigger.py";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68DF1ECF20DD16DA000974E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF1F0020DD1D26000974E7 /* DyamkCodePlayground.m in Sources */,
+				68DF1EFE20DD1CBD000974E7 /* DyamkNativeInjector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68DF1EEA20DD1804000974E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68DF1ED320DD16DA000974E7 /* DyamkInjector */;
+			targetProxy = 68DF1EE920DD1804000974E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68DF1EDA20DD16DA000974E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68DF1EDB20DD16DA000974E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68DF1EDD20DD16DA000974E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DyamkInjector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulghost.dyamk-injector.DyamkInjector";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68DF1EDE20DD16DA000974E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DyamkInjector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulghost.dyamk-injector.DyamkInjector";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68DF1EE720DD17FE000974E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68DF1EE820DD17FE000974E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68DF1ECE20DD16DA000974E7 /* Build configuration list for PBXProject "DyamkInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF1EDA20DD16DA000974E7 /* Debug */,
+				68DF1EDB20DD16DA000974E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF1EDC20DD16DA000974E7 /* Build configuration list for PBXNativeTarget "DyamkInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF1EDD20DD16DA000974E7 /* Debug */,
+				68DF1EDE20DD16DA000974E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF1EE620DD17FE000974E7 /* Build configuration list for PBXAggregateTarget "BuildMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF1EE720DD17FE000974E7 /* Debug */,
+				68DF1EE820DD17FE000974E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68DF1ECB20DD16DA000974E7 /* Project object */;
+}
