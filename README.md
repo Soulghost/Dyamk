@@ -6,6 +6,9 @@ Dyamk can help you run Objective code without recompile and restart the app, it 
 
 Dyamk using socket to communicate with the dylib generate and send project, it works as an aspect in the main app, so it has no intrusion for the main app, just enjoy it!
 
+## Arch && Principle
+![](https://raw.githubusercontent.com/Soulghost/Dyamk/master/arch/arch.png)
+
 ## Installation
 - Clone the repo and go into it.
 ```bash
