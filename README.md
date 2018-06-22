@@ -18,6 +18,8 @@ cd Dyamk
 sh install.sh
 ```
 
+- Some scripts are written in Python3, so you needs Python3 environment, if you don't have it, try [pyenv](https://github.com/pyenv/pyenv). 
+
 ## How to get start
 There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`, the former is the dylib generate and inject project and the latter is a demo app to be injected at runtime, when you use this framework for your own app, your app will be the latter one, now we just talk about the demo.
 
@@ -34,6 +36,7 @@ There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`,
 ## DyamkInjector Project
 - go into the `DyamkInjector` dir and open the project with Xcode.
 - change the build Target to `BuildMe`
+- open the `Build Phase` tab for the target `BuildMe`, and modify the `[Dyamk] Trig Update` script's shell to your `Python3` location, you can use `which python` in the terminal to find the location, if you don't have python3, try [pyenv](https://github.com/pyenv/pyenv).
 - open `DyamkCodePlayground.m`, you can see the function `__dyamk_debug_code_goes_here`, your code to inject goes here.
 ```objc
 void __dyamk_debug_code_goes_here() {
