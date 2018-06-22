@@ -9,13 +9,13 @@
 #import "DyamkNativeInjector.h"
 #import "DyamkCodePlayground.h"
 
-@interface DyamkNativeInjector_2 : NSObject
+@interface DyamkNativeInjector_8 : NSObject
 
 + (void)run;
 
 @end
 
-@implementation DyamkNativeInjector_2
+@implementation DyamkNativeInjector_8
 
 + (void)run {
     __dyamk_debug_code_goes_here();
