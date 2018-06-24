@@ -30,6 +30,10 @@
 		68DF1EFD20DD1CBD000974E7 /* DyamkNativeInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DF1EFB20DD1CBC000974E7 /* DyamkNativeInjector.h */; };
 		68DF1EFE20DD1CBD000974E7 /* DyamkNativeInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1EFC20DD1CBD000974E7 /* DyamkNativeInjector.m */; };
 		68DF1F0020DD1D26000974E7 /* DyamkCodePlayground.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1EFF20DD1D26000974E7 /* DyamkCodePlayground.m */; };
+		68DF1F2C20DDE5E2000974E7 /* DyamkUIAspectTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DF1F2A20DDE5E2000974E7 /* DyamkUIAspectTool.h */; };
+		68DF1F2D20DDE5E2000974E7 /* DyamkUIAspectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1F2B20DDE5E2000974E7 /* DyamkUIAspectTool.m */; };
+		68DF1F3020DF319E000974E7 /* DyamkEventTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DF1F2E20DF319E000974E7 /* DyamkEventTool.h */; };
+		68DF1F3120DF319E000974E7 /* DyamkEventTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF1F2F20DF319E000974E7 /* DyamkEventTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		68DF1EFC20DD1CBD000974E7 /* DyamkNativeInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyamkNativeInjector.m; sourceTree = "<group>"; };
 		68DF1EFF20DD1D26000974E7 /* DyamkCodePlayground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyamkCodePlayground.m; sourceTree = "<group>"; };
 		68DF1F0120DD1D48000974E7 /* DyamkCodePlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyamkCodePlayground.h; sourceTree = "<group>"; };
+		68DF1F2A20DDE5E2000974E7 /* DyamkUIAspectTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyamkUIAspectTool.h; sourceTree = "<group>"; };
+		68DF1F2B20DDE5E2000974E7 /* DyamkUIAspectTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyamkUIAspectTool.m; sourceTree = "<group>"; };
+		68DF1F2E20DF319E000974E7 /* DyamkEventTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyamkEventTool.h; sourceTree = "<group>"; };
+		68DF1F2F20DF319E000974E7 /* DyamkEventTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyamkEventTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		68DF1ED620DD16DA000974E7 /* DyamkInjector */ = {
 			isa = PBXGroup;
 			children = (
+				68DF1F2920DDE5B5000974E7 /* tool */,
 				68DF1EFA20DD1C9D000974E7 /* core */,
 				68DF1EEE20DD188E000974E7 /* py */,
 				68DF1EED20DD1889000974E7 /* sh */,
@@ -136,6 +145,17 @@
 			path = core;
 			sourceTree = "<group>";
 		};
+		68DF1F2920DDE5B5000974E7 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				68DF1F2A20DDE5E2000974E7 /* DyamkUIAspectTool.h */,
+				68DF1F2B20DDE5E2000974E7 /* DyamkUIAspectTool.m */,
+				68DF1F2E20DF319E000974E7 /* DyamkEventTool.h */,
+				68DF1F2F20DF319E000974E7 /* DyamkEventTool.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -144,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68DF1EFD20DD1CBD000974E7 /* DyamkNativeInjector.h in Headers */,
+				68DF1F2C20DDE5E2000974E7 /* DyamkUIAspectTool.h in Headers */,
+				68DF1F3020DF319E000974E7 /* DyamkEventTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DF1F2D20DDE5E2000974E7 /* DyamkUIAspectTool.m in Sources */,
+				68DF1F3120DF319E000974E7 /* DyamkEventTool.m in Sources */,
 				68DF1F0020DD1D26000974E7 /* DyamkCodePlayground.m in Sources */,
 				68DF1EFE20DD1CBD000974E7 /* DyamkNativeInjector.m in Sources */,
 			);
