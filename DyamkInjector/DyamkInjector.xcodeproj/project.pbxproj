@@ -293,8 +293,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /Users/soulghost/.pyenv/shims/python;
-			shellScript = "python ${SRCROOT}/DyamkInjector/py/trigger.py";
+			shellPath = "${DYAMK_PYTHON3_PATH}";
+			shellScript = "python ${SRCROOT}/DyamkInjector/py/trigger.py ${DYAMK_SOCKET_IP} ${DYAMK_SOCKET_PORT}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -476,6 +476,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				DYAMK_PYTHON3_PATH = /Users/soulghost/.pyenv/shims/python;
+				DYAMK_SOCKET_IP = 127.0.0.1;
+				DYAMK_SOCKET_PORT = 2224;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -485,6 +488,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CMYQQFFT8;
+				DYAMK_PYTHON3_PATH = /Users/soulghost/.pyenv/shims/python;
+				DYAMK_SOCKET_IP = 127.0.0.1;
+				DYAMK_SOCKET_PORT = 2224;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
