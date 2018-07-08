@@ -5,7 +5,7 @@ iOS native code injector at runtime, only for debug.
 
 [中文版README (TODO)](#)
 
-[Dyamk WIKI](https://github.com/Soulghost/Dyamk/wiki/Basic-Usage)
+[Dyamk WIKI](https://github.com/Soulghost/Dyamk/wiki/Install-and-Usage-Tutorial)
 
 [中文版WIKI (TODO)](#)
 
