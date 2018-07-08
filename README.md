@@ -27,7 +27,9 @@ sh install.sh
 There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`, the former is the dylib generate and inject project and the latter is a demo app to be injected at runtime, when you use this framework for your own app, your app will be the latter one, now we just talk about the demo.
 
 ## Demo App
-- go into the `DyamkDemoApp` folder, open it with Xcode, if the pod library not installed, just run `pod install` at the project root.
+- go into the `DyamkDemoApp` folder.
+- run `pod install --verbose --no-repo-update`.
+- open `DyamkDemoApp.xcworkspace`.
 - run it with a iOS Simulator, the framework does not support real device by default.
 - because the Dyamk library needs socket to receive build message from injector, there will be an alert to confirm.
 - if there is no error, you can see logs in console as below.
@@ -39,7 +41,7 @@ There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`,
 ## DyamkInjector Project
 - go into the `DyamkInjector` dir and open the project with Xcode.
 - change the build Target to `BuildMe`
-- open the `Build Phase` tab for the target `BuildMe`, and modify the `[Dyamk] Trig Update` script's shell to your `Python3` location, you can use `which python` in the terminal to find the location, if you don't have python3, try [pyenv](https://github.com/pyenv/pyenv).
+- open `Build Settings` for target `BuildMe`, ant find User-Defined Params `DYAMK_PYTHON3_PATH`, change it to your python3 path instead. you can use `which python` in the terminal to find the location, if you don't have python3, try [pyenv](https://github.com/pyenv/pyenv).
 - open `DyamkCodePlayground.m`, you can see the function `__dyamk_debug_code_goes_here`, your code to inject goes here.
 ```objc
 void __dyamk_debug_code_goes_here() {

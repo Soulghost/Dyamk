@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 
 import socket
+import sys
 
 
 def conn():
+    args = sys.argv
+    ip = args[1]
+    port = int(args[2])
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect(('127.0.0.1', 2224))
+    s.connect((ip, port))
     f = open('/opt/Dyamk/dylib/framework_version', 'r')
     number = int(f.readlines()[0])
     if number > 0:
