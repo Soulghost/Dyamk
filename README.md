@@ -1,6 +1,11 @@
 # Dyamk
 iOS native code injector at runtime, only for debug.
 
+[中文版框架原理介绍](https://juejin.im/post/5b41a908e51d4519962e87e8)
+[中文版README (TODO)](#)
+[Dyamk WIKI](https://github.com/Soulghost/Dyamk/wiki/Basic-Usage)
+[中文版WIKI (TODO)](#)
+
 ## Why use Dyamk
 Dyamk can help you run Objective code without recompile and restart the app, it can helps you to debug UI and so forth, it is based on the `dlopen`, so it is only for debug, when you finish your debug, just copy the right code to your main app.
 
