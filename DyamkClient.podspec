@@ -30,6 +30,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency "CocoaAsyncSocket"
 
-  s.script_phase = { :name => '[Dyamk] Reset Framework Version', :script => 'rm /opt/Dyamk/dylib/framework_version' }
-
+  s.script_phase = { :name => '[Dyamk] Reset Framework Version', :script => 'rm /opt/Dyamk/dylib/framework_version || true' }
 end
