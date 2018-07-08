@@ -41,8 +41,7 @@ There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`,
 ## DyamkInjector Project
 - go into the `DyamkInjector` dir and open the project with Xcode.
 - change the build Target to `BuildMe`
-- open `Build Settings` for target `BuildMe`, ant find User-Defined Params `DYAMK_PYTHON3_PATH`, change it to your python3 path instead.
-- open the `Build Phase` tab for the target `BuildMe`, and modify the `[Dyamk] Trig Update` script's shell to your `Python3` location, you can use `which python` in the terminal to find the location, if you don't have python3, try [pyenv](https://github.com/pyenv/pyenv).
+- open `Build Settings` for target `BuildMe`, ant find User-Defined Params `DYAMK_PYTHON3_PATH`, change it to your python3 path instead. you can use `which python` in the terminal to find the location, if you don't have python3, try [pyenv](https://github.com/pyenv/pyenv).
 - open `DyamkCodePlayground.m`, you can see the function `__dyamk_debug_code_goes_here`, your code to inject goes here.
 ```objc
 void __dyamk_debug_code_goes_here() {
