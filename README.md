@@ -27,7 +27,9 @@ sh install.sh
 There are two project in the `Dyamk` folder, `DyamkInjector` and `DyamkDemoApp`, the former is the dylib generate and inject project and the latter is a demo app to be injected at runtime, when you use this framework for your own app, your app will be the latter one, now we just talk about the demo.
 
 ## Demo App
-- go into the `DyamkDemoApp` folder, open it with Xcode, if the pod library not installed, just run `pod install` at the project root.
+- go into the `DyamkDemoApp` folder.
+- run `pod install --verbose --no-repo-update`.
+- open `DyamkDemoApp.xcworkspace`.
 - run it with a iOS Simulator, the framework does not support real device by default.
 - because the Dyamk library needs socket to receive build message from injector, there will be an alert to confirm.
 - if there is no error, you can see logs in console as below.
