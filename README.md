@@ -53,3 +53,6 @@ void __dyamk_debug_code_goes_here() {
 ```
 - build the project, and you can see the demo app running on Simulator has changed it view's background color to red.
 - you can write some code in the `__dyamk_debug_code_goes_here` function, when you build it, these code will be injected to demo app.
+
+## Usage
+[Dyamk Wiki](https://github.com/Soulghost/Dyamk/wiki/Basic-Usage)
