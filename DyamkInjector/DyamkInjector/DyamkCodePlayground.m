@@ -11,29 +11,19 @@
 #import <objc/runtime.h>
 #import "DyamkEventTool.h"
 
-Dyamk_Method_1(void, onClick, id, sender) {
-    NSLog(@"sender iss %@", sender);
-    UIViewController *vc = (UIViewController *)self;
-    UIView *v = [vc.view viewWithTag:1];
-    v.frame = CGRectMake(100, 100, arc4random_uniform(100) + 100, arc4random_uniform(100) + 100);
-}
-
-Dyamk_Method_2(int, add, int, a, int, b) {
-    return a+b;
-}
-
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
 
-@interface UIViewController (Ext)
-
-- (int)add:(int)a andB:(int)b;
-
-@end
+Dyamk_Method_1(void, onClick, id, sender) {
+    UIViewController *vc = (UIViewController *)self;
+    UIView *v = [vc.view viewWithTag:1];
+//    v.frame = CGRectMake(100, 100, arc4random_uniform(100) + 100, arc4random_uniform(100) + 100);
+    [UIView animateWithDuration:2.0 animations:^{
+        v.backgroundColor = [UIColor redColor];
+    }];
+}
 
 void __dyamk_debug_code_goes_here() {
-//    UIViewController *vc = dya_getViewControllerByClassName(@"ViewController");
-//    vc.view.backgroundColor = [UIColor lightGrayColor];
     UIViewController *self = dya_presentControllerForDebug();
     self.view.backgroundColor = [UIColor lightGrayColor];
     UIView *box = [UIView new];
@@ -45,9 +35,6 @@ void __dyamk_debug_code_goes_here() {
     addBtn.center = self.view.center;
     [addBtn addTarget:self action:@selector(addClick:) forControlEvents:UIControlEventTouchUpInside];
     Dyamk_AddMethod(UIViewController, @selector(addClick:), onClick, v@:@);
-    Dyamk_AddMethod(UIViewController, @selector(add:andB:), add, v@:ii);
-    int res = [self add:1 andB:2];
-    NSLog(@"add res is %d", res);
     [self.view addSubview:addBtn];
 }
 
