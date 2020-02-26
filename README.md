@@ -63,4 +63,4 @@ void __dyamk_debug_code_goes_here() {
 - you can write some code in the `__dyamk_debug_code_goes_here` function, when you build it, these code will be injected to demo app.
 
 ## Usage
-[Dyamk Wiki](https://github.com/Soulghost/Dyamk/wiki/Basic-Usage)
+[Dyamk Wiki](https://github.com/Soulghost/Dyamk/wiki/Install-and-Usage-Tutorial)
